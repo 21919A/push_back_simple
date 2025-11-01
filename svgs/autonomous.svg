@@ -2,7 +2,7 @@
 <g transform="scale(1, -1)">
 <rect x="-2100" y="-2100" width="4200" height="4200" fill="#ffffff"/>
 <rect x="-1800" y="-1800" width="3600" height="3600" fill="none" stroke="#333333" stroke-width="3"/>
-<image href="./V5RC-PushBack-H2H-TopDownHighlighted-TileColor66_71@0.1+2000px.png" x="-1850" y="-1850" width="3700" height="3700" opacity="0.25"/>
+<image href="https://raw.githubusercontent.com/21919A/push_back_simple/refs/heads/main/svgs/V5RC-PushBack-H2H-TopDownHighlighted-TileColor66_71@0.1+2000px.png" x="-1850" y="-1850" width="3700" height="3700" opacity="0.25"/>
 <line x1="-1800" y1="-1200" x2="1800" y2="-1200" stroke="#444444" stroke-width="3"/>
 <line x1="-1800" y1="-600" x2="1800" y2="-600" stroke="#444444" stroke-width="3"/>
 <line x1="-1800" y1="0" x2="1800" y2="0" stroke="#444444" stroke-width="3"/>

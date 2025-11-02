@@ -12,8 +12,14 @@
 <rect x="-550" y="-1200" width="20" height="94" transform="rotate(135, -540, -1200)" fill="#eeaa55"/>
 <rect x="530" y="-1200" width="20" height="94" transform="rotate(-45, 540, -1200)" fill="#eeaa55"/>
 <rect x="530" y="-1200" width="20" height="94" transform="rotate(-135, 540, -1200)" fill="#eeaa55"/>
-<rect x="-556" y="1162" width="1112" height="76" fill="#eeaa55" stroke="#000000" stroke-width="3"/>
-<rect x="-556" y="-1238" width="1112" height="76" fill="#eeaa55" stroke="#000000" stroke-width="3"/>
+<rect x="-556" y="1162" width="1112" height="76" fill="#eeaa55"/>
+<rect x="-620" y="1130" width="1240" height="140" fill="none" stroke="#000000" stroke-width="3"/>
+<rect x="-556" y="-1238" width="1112" height="76" fill="#eeaa55"/>
+<rect x="-620" y="-1270" width="1240" height="140" fill="none" stroke="#000000" stroke-width="3"/>
+<rect x="-286" y="-52" width="572" height="104" transform="rotate(45)" fill="#cccccc" stroke="#000000" stroke-width="3"/>
+<polyline points="-128,4 -64,4 -4,64 -4,128" fill="none" stroke="#eeaa55" stroke-width="20"/>
+<polyline points="128,-4 64,-4 4,-64 4,-128" fill="none" stroke="#eeaa55" stroke-width="20"/>
+<rect x="-290" y="-70" width="580" height="140" transform="rotate(-45)" fill="none" stroke="#000000" stroke-width="3"/>
 <path d="M 1118,1728 l 0 36 l 23 23 l 36 0 l 23 -23 l  0 -36 l -23 -23 l -36 0 l -23 23 z" fill="#cc5555" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
 <path d="M 1200,1728 l 0 36 l 23 23 l 36 0 l 23 -23 l  0 -36 l -23 -23 l -36 0 l -23 23 z" fill="#cc5555" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
 <path d="M -164,1182 l 0 36 l 23 23 l 36 0 l 23 -23 l  0 -36 l -23 -23 l -36 0 l -23 23 z" fill="#cc5555" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
@@ -54,7 +60,6 @@
 <path d="M 1653,1191 a 70 70 0 0 0 140 0 a 70 70 0 0 0 -140 0 z m 20 0 a 50 50 0 0 0 100 0 a 50 50 0 0 0 -100 0 z" fill="#eeaa55" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
 <path d="M -1793,-1191 a 70 70 0 0 0 140 0 a 70 70 0 0 0 -140 0 z m 20 0 a 50 50 0 0 0 100 0 a 50 50 0 0 0 -100 0 z" fill="#eeaa55" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
 <path d="M 1653,-1191 a 70 70 0 0 0 140 0 a 70 70 0 0 0 -140 0 z m 20 0 a 50 50 0 0 0 100 0 a 50 50 0 0 0 -100 0 z" fill="#eeaa55" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
-<image href="./V5RC-PushBack-H2H-TopDownHighlighted-TileColor66_71@0.1+2000px.png" x="-1850" y="-1850" width="3700" height="3700" opacity="0.25"/>
 <line x1="-1800" y1="-1200" x2="1800" y2="-1200" stroke="#444444" stroke-width="3"/>
 <line x1="-1800" y1="-600" x2="1800" y2="-600" stroke="#444444" stroke-width="3"/>
 <line x1="-1800" y1="0" x2="1800" y2="0" stroke="#444444" stroke-width="3"/>

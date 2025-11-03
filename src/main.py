@@ -32,47 +32,28 @@ def autonomous_function():
     matchload.set(True)
     trigger_mover.move(Position(1250, 1200), FORWARD)
 
-    conveyor.front_motor.spin(FORWARD)
-    conveyor.back_motor.spin(FORWARD)
-    conveyor.top_motor.spin(FORWARD)
+    conveyor.spin(FORWARD, FORWARD, FORWARD)
     wait(6000, MSEC)
-    conveyor.front_motor.stop()
-    conveyor.back_motor.stop()
-    conveyor.top_motor.stop()
+    conveyor.spin(STOP, STOP, STOP)
 
-    # trigger_mover.move(Position(1200, 1200), REVERSE)
-    # trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
-    # slow_trigger_mover.move(Position(800, 1200), FORWARD)
+    # Steps below are just for testing out the SVG generation
+    
+    matchload.set(False)
 
-    # conveyor.front_motor.spin(REVERSE)
-    # conveyor.back_motor.spin(REVERSE)
-    # conveyor.top_motor.spin(FORWARD)
-    # wait(6000, MSEC)
+    trigger_mover.move(Position(1200, 1200), REVERSE)
+    trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
+    slow_trigger_mover.move(Position(800, 1200), FORWARD)
 
-    # robot_position.reset(Position(1500, 1200))
-    # reset_heading_to_aim(Position(600, 600), REVERSE)
+    conveyor.spin(REVERSE, REVERSE, FORWARD)
+    wait(6000, MSEC)
+    conveyor.spin(STOP, STOP, STOP)
 
-    # reset_robot_position_and_heading_to_gps()
+    conveyor.spin(FORWARD, REVERSE, FORWARD)
+    trigger_mover.move(Position(1200, -600), FORWARD)
 
-    # slow_trigger_mover.move(Position(600, 600), REVERSE)
-    # wait_and_clamp()
-    # intake.spin_forward()
+    conveyor.spin(FORWARD, REVERSE, REVERSE)
 
-    # # Use this for 4-ring
-    # trigger_mover.move(Position(600, 1200))
-    # trigger_mover.move(Position(240, 1210))
-    # trigger_mover.move(Position(600, 1200), REVERSE)
-    # trigger_mover.move(Position(240, 1100))
-    # wait(1500, MSEC)
-    # trigger_mover.move(Position(305, 353))
-    # unclamp()
-    # intake.stop()
-
-    # Use this for 2-ring
-    # trigger_turner.turn(42, FRAME_ABSOLUTE)
-    # intake.spin_forward()
-    # trigger_mover.move(Position(-350, 1000))
-    # unclamp()
+    trigger_mover.move(Position(-1200, -600), FORWARD)
 
     log(("Competition", "competition"), "autonomous_end")
 

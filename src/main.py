@@ -29,12 +29,25 @@ def autonomous_function():
 
     # robot should be 77.5 cm from both sides
 
-    matchload.set(True)
-    trigger_mover.move(Position(1440, 1200), FORWARD)
+    # matchload.set(True)
+    # flap.set(True)
 
-    conveyor.spin(FORWARD, FORWARD, FORWARD)
-    wait(6000, MSEC)
-    conveyor.spin(STOP, STOP, STOP)
+    # conveyor.spin(FORWARD, FORWARD, FORWARD)
+    # trigger_mover.move(Position(1440, 1200), FORWARD)
+
+    # wait(6000, MSEC)
+    # conveyor.spin(STOP, STOP, STOP)
+    # flap.set(False)
+
+    # trigger_mover.move(Position(800, 1200), REVERSE)
+    # matchload.set(False)
+    # trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
+
+    # conveyor.spin(FORWARD, REVERSE, FORWARD)
+
+
+   # trigger_mover.move(Position(800, 1200), REVERSE)
+
 
     # # Steps below are just for testing out the SVG generation
 

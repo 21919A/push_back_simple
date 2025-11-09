@@ -38,16 +38,19 @@ def autonomous_function():
 
     conveyor.spin(REVERSE, FORWARD, FORWARD)
 
-    trigger_mover.move(Position(1460, 1185), FORWARD)
+    # trigger_mover.move(Position(1460, 1185), FORWARD)
+    trigger_driver.drive(550)
 
     wait(3000, MSEC)
     conveyor.spin(STOP, STOP, STOP)
     flap.set(False)
 
-    trigger_mover.move(Position(900, 1180), REVERSE)
+    trigger_mover.move(Position(1200, 1200), REVERSE)
     matchload.set(False)
     trigger_turner.turn(270, FRAME_ABSOLUTE)
 
+    trigger_mover.move(Position(900, 1200), FORWARD)
+    trigger_turner.turn(270, FRAME_ABSOLUTE) # do another check
     conveyor.spin(REVERSE, FORWARD, FORWARD)
 
 

@@ -6,6 +6,9 @@ from push_back.events import *
 # Open log based on config
 config_open_log()
 
+calibrate_and_wait()
+
+
 def driver_function():
     """Function for the driver part of a competition match"""
 
@@ -22,58 +25,34 @@ def autonomous_function():
 
     log(("Competition", "competition"), "autonomous_begin")
 
-    calibrate_and_wait()
-
     robot_position.reset(Position(1200, 1200))
     reset_heading_to_aim(Position(1400, 1200), FORWARD)
 
-    # matchload.set(True)
-    # flap.set(True)
+    matchload.set(True)
 
-    # conveyor.spin(FORWARD, FORWARD, FORWARD)
+    wait(1000, MSEC)
 
-    # trigger_mover.move(Position(1400, 1200), FORWARD)
+    flap.set(True)
 
-    # trigger_driver.drive(200)
+    wait(1000, MSEC)
 
-    trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
+    conveyor.spin(FORWARD, FORWARD, FORWARD)
 
-    # wait(2000, MSEC)
+    trigger_mover.move(Position(1400, 1200), FORWARD)
 
-    # trigger_mover.move(Position(1200, 1200), REVERSE)
+    wait(6000, MSEC)
+    conveyor.spin(STOP, STOP, STOP)
+    flap.set(False)
 
-    # wait(6000, MSEC)
-    # conveyor.spin(STOP, STOP, STOP)
-    # flap.set(False)
+    trigger_mover.move(Position(800, 1200), REVERSE)
+    matchload.set(False)
+    trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
 
-    # trigger_mover.move(Position(800, 1200), REVERSE)
-    # matchload.set(False)
-    # trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
-
-    # conveyor.spin(FORWARD, REVERSE, FORWARD)
+    conveyor.spin(FORWARD, REVERSE, FORWARD)
 
 
-   # trigger_mover.move(Position(800, 1200), REVERSE)
 
 
-    # # Steps below are just for testing out the SVG generation
-
-    # matchload.set(False)
-
-    # trigger_mover.move(Position(1200, 1200), REVERSE)
-    # trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
-    # slow_trigger_mover.move(Position(800, 1200), FORWARD)
-
-    # conveyor.spin(REVERSE, REVERSE, FORWARD)
-    # wait(6000, MSEC)
-    # conveyor.spin(STOP, STOP, STOP)
-
-    # conveyor.spin(FORWARD, REVERSE, FORWARD)
-    # trigger_mover.move(Position(1200, -600), FORWARD)
-
-    # conveyor.spin(FORWARD, REVERSE, REVERSE)
-
-    # trigger_mover.move(Position(-1200, -600), FORWARD)
 
     log(("Competition", "competition"), "autonomous_end")
 

@@ -64,9 +64,12 @@ def autonomous_function():
     """
 
     robot_position.reset(Position(1600, 450)) # 1600 -> 1575 according to path.jerry.io
-    reset_heading_to_aim(Position(1200, 450), FORWARD)
+    reset_heading_to_aim(Position(900, 450), FORWARD)
 
-    trigger_mover.move(Position(1200, 450))
+    trigger_mover.move(Position(900, 450))
+    wait(500, MSEC)
+    trigger_turner.turn(111.801, FRAME_HEADING_RELATIVE)
+    wait(500, MSEC)
     conveyor.spin(REVERSE, FORWARD, FORWARD)
     trigger_mover.move(Position(1200, 1185), FORWARD)
     trigger_turner.turn(90, FRAME_HEADING_RELATIVE)

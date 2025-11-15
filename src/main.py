@@ -100,15 +100,6 @@ def autonomous_function():
     conveyor.spin(REVERSE, FORWARD, FORWARD)
 
 
-    # # EXTRA VERSION FOR MORE BALLS
-
-    # robot_position.reset(Position(1200, 450))
-    # reset_heading_to_aim(Position(900, 450), FORWARD)
-
-    # trigger_turner.turn(30, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(260)
-
-
 
 
     log(("Competition", "competition"), "autonomous_end")

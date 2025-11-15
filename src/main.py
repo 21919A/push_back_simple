@@ -63,9 +63,10 @@ def autonomous_function():
     # conveyor.spin(REVERSE, FORWARD, FORWARD)
     """
 
-    robot_position.reset(Position(1200, 430))
-    reset_heading_to_aim(Position(1200, 1185), FORWARD)
+    robot_position.reset(Position(1600, 450)) # 1600 -> 1575 according to path.jerry.io
+    reset_heading_to_aim(Position(1200, 450), FORWARD)
 
+    trigger_mover.move(Position(1200, 450))
     conveyor.spin(REVERSE, FORWARD, FORWARD)
     trigger_mover.move(Position(1200, 1185), FORWARD)
     trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
@@ -94,6 +95,15 @@ def autonomous_function():
     trigger_mover.move(Position(900, 1200), FORWARD)
     # trigger_turner.turn(270, FRAME_ABSOLUTE) # do another check
     conveyor.spin(REVERSE, FORWARD, FORWARD)
+
+
+    # # EXTRA VERSION FOR MORE BALLS
+
+    # robot_position.reset(Position(1200, 450))
+    # reset_heading_to_aim(Position(900, 450), FORWARD)
+
+    # trigger_turner.turn(30, FRAME_HEADING_RELATIVE)
+    # trigger_driver.drive(260)
 
 
 

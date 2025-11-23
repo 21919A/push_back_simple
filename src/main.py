@@ -99,7 +99,13 @@ def autonomous_function():
     conveyor.spin(REVERSE, FORWARD, FORWARD)
     """
 
+    robot_position.reset(Position(1600, 450))
+    reset_heading_to_aim(Position(900, 450), FORWARD)
+    flap.set(True)
 
+    trigger_mover.move(Position(1200, 450), FORWARD)
+    trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
+    trigger_mover.move(Position(1200, 1200), FORWARD)
 
     log(("Competition", "competition"), "autonomous_end")
 

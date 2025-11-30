@@ -113,16 +113,21 @@ def autonomous_function():
     conveyor.spin(REVERSE, FORWARD, FORWARD)
     # slow_trigger_driver.drive(243)
 
-    trigger_driver.drive_for_time(1000, 50, True, 243)
+    trigger_driver.drive_for_time(1000, 30, True, 243)
+    trigger_driver.drive(-35)
+    reset_robot_position_and_heading_to_gps()
 
-    wait(600, MSEC)
+    wait(755, MSEC)
 
     trigger_mover.move(Position(1200, 1200), REVERSE)
     flap.set(False)
     matchload.set(False)
+    trigger_turner.turn(90, FRAME_ABSOLUTE)
     conveyor.spin(STOP, STOP, STOP)
     trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
-    trigger_mover.move(Position(870, 1200))
+    trigger_turner.turn(270, FRAME_ABSOLUTE)
+    trigger_mover.move(Position(835, 1200))
+    trigger_turner.turn(270, FRAME_ABSOLUTE)
     trigger_turner.turn(270, FRAME_ABSOLUTE)
     conveyor.spin(REVERSE, FORWARD, FORWARD)
 
